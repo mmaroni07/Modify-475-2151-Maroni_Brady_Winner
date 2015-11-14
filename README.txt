@@ -1,11 +1,10 @@
 .\project.ps1
 -Powershell script
 
-Optional arguments:
-1) Directory to be searched recursivley, must be absolute path
-2) Date for how far back to look for changes since
+This is a powershell script to be able to check a specific directoy (provided by the user) or it will default to the C:/ Drive. The default date range to look from is 1/1/15 - the current date. This will be if the user does not provide any arguments for the code before it runs. The user can specify a certain date to look for modified files from. 
 
-You may chose to include option 1 but not option 2. 
-You cannot include option 2 without option 1.
+There is a help option with the code and will display if the user.
+The command is:
+.\project.ps1 --help
 
-try ".\project.ps1 --help" for usage
+The user's first argument in the code should be the directory path to search (this will also search all subdirectories and their files as well), while the second argument should be the date (in Windows format: mm/dd/yy). 
